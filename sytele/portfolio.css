@@ -28,6 +28,7 @@ nav{
     display: flex;
     justify-content: space-between;
 align-items: center;
+margin: 0px 200px;
 }
 nav>ul{
     display: flex;
@@ -42,4 +43,12 @@ nav a{
     color: #474747;
     align-items: center;
 
+}
+.banner-content{
+    padding: 30px 30px 30px 200px;
+    display: flex;
+    align-items: center;
+}
+.profile-pic{
+    width: 584px;
 }
