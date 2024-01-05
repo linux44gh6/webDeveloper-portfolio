@@ -28,6 +28,7 @@ font-weight: 700;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px; /* 166.667% */
+    margin-bottom: 30px;
 }
 /* deploy css on website */
 h1{
@@ -88,8 +89,21 @@ margin-top: 0px;
 margin-bottom: 30px;
 }
 /* main seciton desing */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .about{
     border-radius: 10px;
 background: #FFF8F3;
 margin-top: 130px;
+}
+.about-info-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+.about-info{
+    text-align: center;
+    margin-right: 50px;
 }
