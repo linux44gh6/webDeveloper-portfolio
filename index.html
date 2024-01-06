@@ -8,6 +8,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Noto+Serif&family=Open+Sans:ital,wght@0,600;0,800;1,400&family=Playfair+Display:ital,wght@0,700;1,400&family=Playpen+Sans:wght@200&family=Poppins&family=Quicksand:wght@700&family=Sofia+Sans:wght@200&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sytele/portfolio.css">
+    <script src="https://kit.fontawesome.com/d90cb7d9fc.js" crossorigin="anonymous"></script>
+    <style>
+        label{
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,8 +30,8 @@
             <h3 class="banner-greetin">Hi, I  am</h3>
             <h1 class="banner-title">Mary Hardy</h1>
             <p class="banner-discirption">Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning because as to society behaved moments.</p>
-            <button class="btn-primary">Download CV</button>
-            <button class="btn-primary">Contact</button>
+            <button class="btn-primary"><i class="fa-solid fa-download"></i> Download CV</button>
+            <button class="btn-primary"><i class="fa-solid fa-phone"></i> Contact</button>
          </div>
          <img class="profile-pic" src="images/hardy.png" alt="">
         </div>
@@ -128,10 +134,35 @@
                     </div>
                 </div>
             </div>
+          <div class="download-cv">
+            <button class="btn-primary"><i class="fa-solid fa-download"></i>Download cv</button>
+          </div>
         </section>
     </main>
     <footer>
-
+        <div class="footer-container">
+            <div class="footer-content">
+                <h1 class="footer-title">Lets Connect</h1>
+                <p class="footer-description">Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
+                <div class="footer-icon">
+                    <a href=""><img class="icon" src="images/icons/facebook.png" alt=""></a>
+                    <a href=""><img class="icon" src="images/icons/twitter.png" alt=""></a>
+                    <a href=""><img class="icon" src="images/icons/insta.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <h1 class="footer-title">Let’s Message me</h1>
+                <div class="message">
+                 <form class="contact-from" action="">
+                   
+                        <input type="text" name="name" id="" placeholder="Your name">
+                        <input type="email" name="email" id="" placeholder="Your email">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                  <button class="btn-primary">submit</button>
+                 </form>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
