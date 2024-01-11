@@ -1,4 +1,9 @@
 /* shared style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Poppins', sans-serif;
 
@@ -16,6 +21,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     padding: 15px 35px;
+    pointer-events: painted;
 
 }
 
@@ -44,7 +50,9 @@ h1 {
     font-weight: 800;
 
 }
-
+.banner{
+    /* border: 3px solid tomato; */
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -79,7 +87,7 @@ nav a {
     width: 584px;
 }
 
-header {
+.banner-content{
     background-image: url(../images/header_bg.png),url(../images/developer.png);
     background-repeat: no-repeat;
     background-position: bottom right,top left;
@@ -207,9 +215,6 @@ font-weight: 400;
     margin-bottom:0px;
 
 }
-.education-info-descriptin{
-
-}
 .education-info-header{
     color:  #474747;
 font-size: 30px;
@@ -219,6 +224,7 @@ font-weight: 700;
     color:  #474747;
     font-size: 25px;
     font-weight: 700;
+   margin-bottom: 30px;
 }
 .section-title-date{
     color:  #757575;
@@ -242,7 +248,8 @@ font-weight: 700;
     margin-top: 130px;
 }
 .footer-content{
-  width: 50%;
+ width: 50%;
+ /* border: 2px solid tomato; */
 }
 .footer-title{
     color:  #181818;
@@ -256,7 +263,6 @@ font-weight: 700;
     font-weight: 400;
 }
 .contact-from input,textarea{
-    display: block;
     border-radius: 5px;
 background:  #FFF;
 padding: 18px 35px;
@@ -267,4 +273,79 @@ width: 100%;
 .icon{
     width: 24px;
     height: 24px;
+}
+/* responsive a website with css */
+@media screen and (max-width:576px){
+    .skils-container,.summary-container {
+        flex-direction: column;
+    }
+    .about-info-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skill{
+        padding: 5px;
+        width: 100%;
+        margin-top: 1.5em;
+    }
+    .experience-info  ,.education-info,.about-info {
+        width: 100%;
+        text-align: center;
+    }
+    .what-i-do{
+        width: auto;
+    }
+    .about{
+        padding: 5px;
+    }
+    .experience-info,.education-info{
+        margin-top: 3em;
+        height: 100%;
+    }
+    .footer-container{
+        flex-direction: column-reverse;
+        padding: 13px 20px;
+      
+    }
+    .footer-content{
+        width: 100%;
+        display: inline;
+    }
+    .contact-from input,textarea{
+        width: 100%;
+    }
+    .banner-content {
+      flex-direction: column;
+        /* align-items: center; */
+        padding: 30px 30px 0px 20px;
+    }
+    .profile-pic{
+        width: 100%;
+        height: auto;
+    }
+    nav {
+       margin: 0px 0px;
+    }
+    nav li { 
+        margin-right: 20px;
+    }
+    .btn-primary {
+        border: 0;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 15px 20px;
+        
+    }
+   .banner{
+    width: 100%;
+   
+   }
+h1{
+    font-size: 23px;
+    font-weight: 400;
+}
+.education-info-header{
+    text-align: center;
+}
 }
